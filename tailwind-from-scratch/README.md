@@ -60,4 +60,30 @@ Cmd+Shift+P - edit JSON settings.
 
 Follow [tailwind-sandbox-done](https://github.com/bradtraversy/tailwind-sandbox/tree/main/tailwind-sandbox-done).
 
-## Section 2 - Intro
+## Section 2 - Fundamentals
+
+## Lesson 2.8 - Working with colors
+
+See [colors from sandbox starter](tailwind-sandbox-starter\02-colors\index.html)
+
+Shades - black and white do not have shades. So we only have `text-white` and `text-black`.
+
+If we use any color, we have to specify shade. So we have `text-red-50` for example.
+
+The shades are from 50 to 900.
+
+Shadow opacity is defined with `/N` where `/100` is the default:
+
+```html
+    <button class="shadow-lg bg-cyan-500 shadow-purple-500/50">
+      Subscribe
+    </button>
+```
+
+You can directly use arbitrary colors:
+
+```html
+    <div class="bg-[#427fab]">Hello</div>
+    <div class="bg-[rgb(255,150,255)]">Hello</div>
+    <div class="bg-[steelblue]">Hello</div>
+```
