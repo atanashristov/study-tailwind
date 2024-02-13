@@ -87,3 +87,63 @@ You can directly use arbitrary colors:
     <div class="bg-[rgb(255,150,255)]">Hello</div>
     <div class="bg-[steelblue]">Hello</div>
 ```
+
+## Lesson 2.9 - Containers and spacing
+
+Breakpoints:
+
+```java
+    container None width: 100%;
+    sm (640px)     max-width: 640px;
+    md (768px)     max-width: 768px;
+    lg (1024px)    max-width: 1024px;
+    xl (1280px)    max-width: 1280px;
+    2xl (1536px)   max-width: 1536px;
+```
+
+To make a `div` a _container_ we add class `container` and to center it horizontally we add `mx-auto` (margin on the X):
+
+```html
+<div class="container mx-auto"> ...
+```
+
+**Margins**:
+
+- `m` all around
+- `mx` horizontal
+- `my` vertical
+- `ml` on the left
+- `mr` on the right
+- `mt` on the top
+- `mb` on the bottom
+
+we can also have a numeric value from 0 to 96 proportional to the _root-em_:
+
+```css
+mx-1 margin-left: 0.25rem; /* 4px */
+...
+ml-96 margin-left: 24rem; /* 384px */
+```
+
+You can directly use arbitrary value like `mr-[20px]`.
+
+**Paddings** just uses `p` instead of `m`.
+
+**Space between** X or Y: `space-x-...` or `space-y-...`.
+
+We can have flex row:
+
+```html
+      <div class="flex mt-4 space-x-4">
+        <div>Item 1</div>
+        <div>Item 2</div>
+...
+```
+
+we can have flex column:
+
+```html
+      <div class="flex flex-col mt-4 space-y-4">
+        <div>Item 1</div>
+```
+
