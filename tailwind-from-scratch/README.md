@@ -147,3 +147,54 @@ we can have flex column:
         <div>Item 1</div>
 ```
 
+## Lesson 2.10 - Typography
+
+We have the following _families_:
+
+- font-sans (the default one)
+- font-serif
+- font-mono
+
+You can use custom font, edit your `tailwind.config.js` when generated with `tailwind` CLI.
+
+With the CDN we can have `script` tag:
+
+```html
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['ui-sans-serif', 'system-ui'],
+            serif: ['ui-serif', 'Georgia'],
+            mono: ['ui-monospace', 'SFMono-Regular'],
+          },
+        },
+      };
+    </script>
+```
+
+And if we want to add a custom font like [Google Fonts Tapestry](https://fonts.google.com/specimen/Tapestry?sort=date&query=tapestry), then we have to include the font from Google and we can use for let's say "serif":
+
+```html
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['ui-sans-serif', 'system-ui'],
+            serif: ['Tapestry', 'Georgia'],
+            mono: ['ui-monospace', 'SFMono-Regular'],
+          },
+        },
+      };
+    </script>
+```
+
+We have the following _font sizes_: from `text-xs` to `text-9xl`.

@@ -4,27 +4,96 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['ui-sans-serif', 'system-ui'],
+            serif: ['Tapestry', 'Georgia'],
+            mono: ['ui-monospace', 'SFMono-Regular'],
+          },
+        },
+      };
+    </script>
     <title>Typography</title>
   </head>
   <body>
     <!-- Font Family -->
+    <div class="font-sans">font-sans</div>
+    <div class="font-serif">font-serif</div>
+    <div class="font-mono">font-mono</div>
 
     <!-- Font Size -->
+    <div class="text-xs">text-xs</div>
+    <div class="text-sm">text-sm</div>
+    <div class="text-base">text-base - that is the default</div>
+    <div class="text-lg">text-lg</div>
+    <div class="text-xl">text-xl</div>
+    <div class="text-2xl">text-2xl</div>
+    <div class="text-3xl">text-3xl</div>
+    <div class="text-4xl">text-4xl</div>
+    <div class="text-5xl">text-5xl</div>
+    <div class="text-6xl">text-6xl</div>
+    <div class="text-7xl">text-7xl</div>
+    <div class="text-8xl">text-8xl</div>
+    <div class="text-9xl">text-9xl</div>
 
     <!-- Font Weight -->
+    <div class="font-light">font-light</div>
+    <div class="font-normal">font-normal</div>
+    <div class="font-medium">font-medium</div>
+    <div class="font-semibold">font-semibold</div>
+    <div class="font-bold">font-bold</div>
 
     <!-- Letter Spacing -->
+    <div class="tracking-tighter">tracking-tighter</div>
+    <div class="tracking-tight">tracking-tight</div>
+    <div class="tracking-normal">tracking-normal</div>
+    <div class="tracking-wide">tracking-wide</div>
+    <div class="tracking-wider">tracking-wider</div>
+    <div class="tracking-widest">tracking-widest</div>
 
     <!-- Text Alignment -->
+    <div class="text-left">text-left</div>
+    <div class="text-center">text-center</div>
+    <div class="text-right">text-right</div>
 
     <!-- Text Decoration -->
+    <div class="underline decoration-4 decoration-blue-400">
+      underline decoration-4 decoration-blue-400
+    </div>
 
     <!-- Decoration Style -->
+    <div class="underline decoration-double decoration-blue-400">
+      underline decoration-4 decoration-blue-400
+    </div>
+    <div class="underline decoration-dotted decoration-blue-400">
+      underline decoration-4 decoration-blue-400
+    </div>
+    <div class="underline decoration-dashed decoration-blue-400">
+      underline decoration-4 decoration-blue-400
+    </div>
+    <div class="underline decoration-wavy decoration-blue-400">
+      underline decoration-4 decoration-blue-400
+    </div>
 
     <!-- Decoration Offset -->
+    <div class="underline decoration-4 decoration-blue-400 underline-offset-8">
+      underline decoration-4 decoration-blue-400 underline-offset-8
+    </div>
 
     <!-- Text Transform -->
+    <div class="normal-case">This is normal-case</div>
+    <div class="uppercase">This is uppercase</div>
+    <div class="lowercase">This is lowercase</div>
+    <div class="capitalize">This is capitalize</div>
   </body>
 </html>
 
