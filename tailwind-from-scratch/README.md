@@ -198,3 +198,7 @@ And if we want to add a custom font like [Google Fonts Tapestry](https://fonts.g
 ```
 
 We have the following _font sizes_: from `text-xs` to `text-9xl`.
+
+## Lesson 2.11 - Sizing
+
+`w-0` = zero width. Without width takes all space.
