@@ -8,6 +8,8 @@ Links:
 - [Tailwind sandbox](https://github.com/bradtraversy/tailwind-sandbox)
 - [Tailwind CSS](https://tailwindcss.com/)
 
+Work is done in the started folder `.\tailwind-sandbox-starter`.
+
 Tailwind CSS is:
 
 - Low level classes

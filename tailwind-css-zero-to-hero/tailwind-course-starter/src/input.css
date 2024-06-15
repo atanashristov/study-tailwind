@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Quicksand", sans-serif;
+  }
+}
+
+@layer components {
+  .menu-item {
+    @apply relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 transition-colors ease-in-out hover:bg-white/10 hover:text-zinc-200;
+  }
+}
+
+.filter-text-sky-800 {
+  filter: invert(28%) sepia(100%) saturate(702%) hue-rotate(162deg)
+    brightness(83%) contrast(96%);
+}
